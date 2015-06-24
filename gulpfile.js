@@ -10,6 +10,10 @@ var pkg = require('./package.json'),
   uglify = require('gulp-uglify'),
   jade = require('gulp-jade'),
   stylus = require('gulp-stylus'),
+  typographic = require('typographic'),
+  nib = require('nib'),
+  jeet = require('jeet'),
+  axis = require('axis'), 
   autoprefixer = require('gulp-autoprefixer'),
   csso = require('gulp-csso'),
   through = require('through'),
@@ -50,9 +54,11 @@ gulp.task('css', ['clean:css'], function () {
   return gulp.src('src/styles/main.styl')
     .pipe(isDist ? through() : plumber())
     .pipe(stylus({
+      use: [typographic(), nib(), axis(), jeet()],
       // Allow CSS to be imported from node_modules and bower_components
       'include css': true,
-      'paths': ['./node_modules', './bower_components']
+      'paths': ['./node_modules', './bower_components'], 
+        
     }))
     .pipe(autoprefixer('last 2 versions', { map: false }))
     .pipe(isDist ? csso() : through())
@@ -90,10 +96,10 @@ gulp.task('clean:css', function () {
 gulp.task('connect', ['build'], function (done) {
   connect.server({
     root: 'dist',
-    port: 80,
+    port: 1999,
     livereload: true
   });
-  opn('http://localhost:80', done);
+  opn('http://localhost:1999', done);
 });
 
 gulp.task('watch', function () {
