@@ -114,6 +114,7 @@ gulp.task('deploy', ['build'], function (done) {
   ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log }, done);
 });
 
+
 gulp.task('build', ['js', 'html', 'other-html', 'css', 'images']);
 gulp.task('serve', ['connect', 'watch']);
 gulp.task('default', ['build']);
