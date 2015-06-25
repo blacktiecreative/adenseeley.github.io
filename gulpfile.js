@@ -13,7 +13,8 @@ var pkg = require('./package.json'),
   typographic = require('typographic'),
   nib = require('nib'),
   jeet = require('jeet'),
-  axis = require('axis'), 
+  axis = require('axis'),
+  rupture = require('rupture'), 
   autoprefixer = require('gulp-autoprefixer'),
   csso = require('gulp-csso'),
   through = require('through'),
@@ -54,7 +55,7 @@ gulp.task('css', ['clean:css'], function () {
   return gulp.src('src/styles/main.styl')
     .pipe(isDist ? through() : plumber())
     .pipe(stylus({
-      use: [typographic(), nib(), axis(), jeet()],
+      use: [typographic(), nib(), rupture(), axis(), jeet()],
       // Allow CSS to be imported from node_modules and bower_components
       'include css': true,
       'paths': ['./node_modules', './bower_components'], 
