@@ -1,77 +1,60 @@
+.menu
+  overflow-x hidden
+  relative left 0
+  transition left 500ms ease
+  z-index 1
+
 .menu-side
   background dg
-  border-right 1px solid black
   color white 
   position fixed
   top 0 
-  left -100vw
-  width 100vw
-  height 100vh
- 
- .menu
-   overflow-x hidden
-   relative left 0
-   transition left 500ms ease
-   z-index 1 
-   
-.menu-open
-  left 100vw
-  .menu-side
-    left 0
-    transition left 500ms ease 
-    z-index 999 
-    .menu-toggle
-      float right
-      margin-right 4em
-      color lg
-      &:hover
-        white
-#opener
-  fixed top 20px left 8px
-  margin-left 2rem
+  left -200px
+  size 200px 100vh
+  overflow-x hidden
+  #close
+    margin-top 5px
+    margin-right 10px
+    
+.menu-toggle
+  float right
+  color lg 
+  &:hover
+    color white
+#open
+  fixed top 20px left 12px
+  margin-left 1rem
   color lg
   z-index 10
   &:hover
     white         
-
 .nav-content
   col(1)
   center()
-  .nav-projects
-    col(1/3)
-    border-left solid 1px white
-    border-right solid 1px white
-    padding 0 .5em 0 .5em
-    margin 2em
+  .nav
+    col(1)
+    padding .5em
+    h3
+      color white
+     
     ul
       list-style none
+          
       li
-        margin-bottom .5em
+        
         a
           color lg 
           text-decoration none 
-          font-size 1.2em 
+          font-size 1em 
           &:hover
-            color white
-  .info
-    col(1/3)
-    border-left solid 1px white
-    border-right solid 1px white
-    padding 0 .5em 0 .5em
-    margin 2em
-
-
-
-
-
-
-
-
-
-
-
-
-
+            color white   
+// helping
+.menu-open
+  left 200px
+  .menu-side
+    left 0
+    transition left 500ms ease 
+    z-index 999 
 
 
 

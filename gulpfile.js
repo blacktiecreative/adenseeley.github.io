@@ -93,7 +93,6 @@ gulp.task('clean:css', function () {
   return gulp.src('dist/build/build.css')
     .pipe(rimraf());
 });
-
 gulp.task('connect', ['build'], function (done) {
   connect.server({
     root: 'dist',
@@ -102,7 +101,6 @@ gulp.task('connect', ['build'], function (done) {
   });
   opn('http://localhost:1999', done);
 });
-
 gulp.task('watch', function () {
   gulp.watch('src/**/*.jade', ['html']);
   gulp.watch('src/**/*.html', ['other-html']);
@@ -118,4 +116,5 @@ gulp.task('deploy', ['build'], function (done) {
 
 gulp.task('build', ['js', 'html', 'other-html', 'css', 'images']);
 gulp.task('serve', ['connect', 'watch']);
+// gulp.task('serve', ['watch']);
 gulp.task('default', ['build']);

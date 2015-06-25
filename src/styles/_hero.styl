@@ -1,11 +1,22 @@
 .main-hero
-  position absolute
   size 100% 100vh
   // background url('../images/hero.jpg')
-  background lg  
+  background transparent  
   background-size cover
   background-attachment fixed
   z-index 1 
+
+  .text
+    vertically-align()
+    width: 80%
+    margin 0 auto
+    text-align center
+    a
+        color darken(lg, 40%) 
+        text-decoration none 
+        &:hover
+            color dg
+    
   
  
 
