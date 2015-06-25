@@ -1,35 +1,38 @@
-.main-site-nav
-  position absolute
-  top 2em
-
-  width 85%
-  columns(1)
-  z-index 999
-  color: lg
-  border-bottom solid 1px white
+.menu-side
+  background dg
+  border-right 1px solid black
+  color white 
+  position fixed
+  top 0 
+  left -100vw
+  width 100vw
+  height 100vh
+ 
+ .menu
+   overflow-x hidden
+   relative left 0
+   transition left 500ms ease
+   z-index 1 
+   
+.menu-open
+  left 100vw
+  .menu-side
+    left 0
+    transition left 500ms ease 
+    padding 2rem
+    z-index 999
+    .menu-toggle
+      float right
+      margin-right 4em
+      color lg
+      &:hover
+        white
+      
+#opener
+  fixed top 20px left 8px
+  margin-left 2rem
+  color lg
+  z-index 10
+  &:hover
+    white
   
-
-  section
-    ul
-      list-style none
-      
-      li
-        display inline-block
-        margin 1em
-        a
-          text-decoration none
-          color lg
-          &:hover
-            color dg
-          
-  .title
-    padding-top .9em
-    column(.2)
-  .site-navigation
-    column(.5)
-  .social-media
-    column(.2)
-    text-align right
-    ul a img
-      height 1em
-      

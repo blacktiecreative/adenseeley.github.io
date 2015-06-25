@@ -6,140 +6,33 @@ html
     title Pyrrhicreative
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 
-  body
+
+  body.menu    
     header
-      section.main-hero
-      nav.main-site-nav
-        section.title
-          h1 Pyrrhic Creative
-        section.site-navigation
-          ul
-            li: a(href="#") Home
-            li: a(href="#") What
-            li: a(href="#") Stories
-            li: a(href="#") Who
-            li: a(href="#") How
-            li: a(href="#") Message
-            li: a(href="#") Store
-        section.social-media
-          ul
-            li: a(href="#"): img(src="images/git.svg", alt="social media links")
-            li: a(href="#"): img(src="images/twit.svg", alt="social media links")
-            
-      
+      //- open menu
+      a(href="#").menu-toggle#opener: i.fa.fa-bars.fa-3x
+      nav.menu-side
+        //- close out
+        a(href="#").menu-toggle: i.fa.fa-times.fa-3x
+        section.projects
+          ul 
+            li: a(href="#") Proj 1
+            li: a(href="#") Proj 2
+            li: a(href="#") Proj 3
+            li: a(href="#") Proj 4
+            li: a(href="#") Proj 5
+            li: a(href="#") Proj 1
+            li: a(href="#") Proj 2
+            li: a(href="#") Proj 3
+            li: a(href="#") Proj 4
+            li: a(href="#") Proj 5
     main
-      section.projects 
-        h1 Our Projects
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eius quidem perferendis laborum aspernatur laudantium, id! Itaque ipsum ab vel! Commodi fugit temporibus, quia, delectus modi error voluptatibus enim ut.
-        article.project-window#project-1
-          img(src="#", alt="----")
-          figcaption
-            h4  Lorem ipsum dolor.
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iusto!
-            a(href="#")
-        article.project-window#project-1
-          img(src="#", alt="----")
-          figcaption
-            h4  Lorem ipsum dolor.
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, adipisci.
-            a(href="#")
-        article.project-window#project-1
-          img(src="#", alt="----")
-          figcaption
-            h4  Lorem ipsum dolor.
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quam!
-            a(href="#")
-        article.project-window#project-1
-          img(src="#", alt="----")
-          figcaption
-            h4  Lorem ipsum dolor.
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iusto!
-            a(href="#")
-        article.project-window#project-1
-          img(src="#", alt="----")
-          figcaption
-            h4  Lorem ipsum dolor.
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, adipisci.
-            a(href="#")
-        article.project-window#project-1
-          img(src="#", alt="----")
-          figcaption
-            h4  Lorem ipsum dolor.
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quam!
-            a(href="#")
-
-      section.blog-posts-index 
-        h1 Our Recent Posts
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nisi, quia in voluptatem ab. Aliquid rerum nobis animi necessitatibus, nulla minus nesciunt eveniet sit voluptas? Possimus, illum odit atque consequatur.
-        article.blog-section-index
-              h4  Lorem ipsum dolor.
-              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iusto!
-              a(href="#")
-        article.blog-section-index
-              h4  Lorem ipsum dolor.
-              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, adipisci.
-              a(href="#")
-        article.blog-section-index
-              h4  Lorem ipsum dolor.
-              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quam!
-              a(href="#")
-        article.blog-section-index
-              h4  Lorem ipsum dolor.
-              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iusto!
-              a(href="#")
-      
-      section.who-we-are
-        h1 Who We Are
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio modi tempora corporis ducimus quisquam velit ratione necessitatibus omnis pariatur asperiores voluptate repudiandae ipsum nulla porro distinctio, voluptatem facere nihil consequuntur!
-        article.blog-section-index#river
-          img(src="#", alt="avatar")
-          h4  Lorem ipsum dolor.
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iusto!
-          ul
-            li: a(href=""): img(src="", alt="twitter")
-            li: a(href=""): img(src="", alt="facebook")
-            li: a(href=""): img(src="", alt="behance")
-            li: a(href=""): img(src="", alt="other-social")  
-        article.blog-section-index#aden
-          img(src="#", alt="avatar")
-          h4  Lorem ipsum dolor.
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, adipisci.
-          ul
-            li: a(href=""): img(src="", alt="twitter")
-            li: a(href=""): img(src="", alt="facebook")
-            li: a(href=""): img(src="", alt="behance")
-            li: a(href=""): img(src="", alt="other-social")  
-        article.blog-section-index#tessa
-          img(src="#", alt="avatar")
-          h4  Lorem ipsum dolor.
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quam!
-          ul
-            li: a(href=""): img(src="", alt="twitter")
-            li: a(href=""): img(src="", alt="facebook")
-            li: a(href=""): img(src="", alt="behance")
-            li: a(href=""): img(src="", alt="other-social")  
-        article.blog-section-index#miranda
-          img(src="#", alt="avatar")
-          h4  Lorem ipsum dolor.
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iusto!
-          ul
-            li: a(href=""): img(src="", alt="twitter")
-            li: a(href=""): img(src="", alt="facebook")
-            li: a(href=""): img(src="", alt="behance")
-            li: a(href=""): img(src="", alt="other-social")  
-        article.blog-section-index#holly
-          img(src="#", alt="avatar")
-          h4  Lorem ipsum dolor.
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iusto!
-          ul
-            li: a(href=""): img(src="", alt="twitter")
-            li: a(href=""): img(src="", alt="facebook")
-            li: a(href=""): img(src="", alt="behance")
-            li: a(href=""): img(src="", alt="other-social")  
-        
-
+      //- section.main-hero
 
     footer
+      
+   
 
     script(src='build/build.js')
