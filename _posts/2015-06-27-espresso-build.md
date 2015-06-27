@@ -1,5 +1,5 @@
 ---
-layout: post-page
+layout: post_page
 title: The design process of an espresso machine
 ---
 Squid mlkshk artisan, Etsy gentrify seitan fanny pack sartorial 3 wolf moon Tumblr heirloom Williamsburg keffiyeh. Flexitarian locavore master cleanse +1, 8-bit Bushwick umami fingerstache drinking vinegar twee farm-to-table deep v lomo four loko. Skateboard deep v raw denim, 90's fanny pack tofu literally Pinterest Carles Truffaut Etsy lomo try-hard. Mustache crucifix hoodie 90's skateboard Wes Anderson. Tattooed farm-to-table letterpress, jean shorts tote bag +1 four dollar toast retro fixie next level. Farm-to-table Thundercats direct trade, disrupt Marfa Portland VHS small batch banjo pour-over chia. Sustainable American Apparel retro, Tumblr forage roof party VHS tofu Wes Anderson small batch semiotics plaid.
